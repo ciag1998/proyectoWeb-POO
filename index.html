@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">  
+    <meta name="author" content="Cristhopher Anidno>
+    <meta name="keywords" content="Registro">
+    <meta name="description" content="Registro">
+    <link rel="shortcut icon" href="imagenes/logo-conejo-pestana.ico">
+    <link rel="stylesheet" href="frontend/css/bootstrap.css">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <form method="POST" action="backend/php/registroUsuario.php">
+        
+        <br><center>
+
+            <h5>Registro</h5>
+            <th>Nombre</th>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <br>
+            <th>Apellido</th>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            <br>
+            <th>Correo</th>
+            <input type="email" id="correo" name="correo" placeholder="Correo">
+            <br>
+            <th>Fecha</th>
+            <input type="date" id="fecha" name="fecha" placeholder="Fecha">
+            <br>
+            <th>Contraseña</th>
+            <input type="password" id="contra" name="contra" placeholder="Contra">
+            <br>
+            <th>Repetir Contraseña</th>
+            <input type="password" id="rContra" name="rContra" placeholder="Repetir Contraseña">
+            <br>
+            <input type="submit" id="registrar" value="Registrar">
+        
+        </center>
+
+    </form>
+    
+    <script src="frontend/js/jquery.js"></script>
+    <script src="backend/ajax/consultas.js"></script>
+    
+</body>
+</html>
